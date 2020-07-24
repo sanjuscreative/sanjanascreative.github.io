@@ -15,7 +15,7 @@ body {
 }
 
 body {
-    font-family: $base-font;
+    font-family: $roboto-font;
     font-size: $base-font-size;
     background: $base-bgclr;
     margin: 50px;
@@ -54,12 +54,178 @@ body {
     box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.75);
     padding: 50px;
 
-    .main-cont-container{
-        font-family: 'Aladin', cursive;
-        font-size: 48px;
-        color: $white;
+    .main-cont-container {
         min-height: 65vh;
+
+        .title {
+            font-family: 'Aladin', cursive;
+            font-size: 48px;
+            color: $white;
+            margin-bottom: 24px;
+        }
+
+        .explore-btn-sec {
+            margin-top: 56px;
+
+            .explore-btn {
+                display: inline-block;
+                margin: 0 auto;
+                font-size: 18px;
+                font-family: 'Aladin', cursive;
+                padding: 10px 45px;
+                color: $base-bgclr;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffe6b2+0,ff9b0c+100 */
+                background: #ffe6b2;
+                /* Old browsers */
+                background: -moz-linear-gradient(top, #ffe6b2 0%, #ff9b0c 100%);
+                /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, #ffe6b2 0%, #ff9b0c 100%);
+                /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom, #ffe6b2 0%, #ff9b0c 100%);
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe6b2', endColorstr='#ff9b0c', GradientType=0);
+                /* IE6-9 */
+                text-decoration: none;
+
+                -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.1);
+                -moz-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.1);
+                box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.1);
+                @include transition;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .cards-container {
+            margin-top: 40px;
+            text-align: center;
+
+            .main-cards {
+                width: 224px;
+                display: inline-block;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                margin-right: 16px;
+                margin-bottom: 16px;
+                @include transition;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.gods {
+                    padding: 16px;
+                    background: #E43D83;
+
+                    .icons {
+                        background: url(../icons/ganesha.svg) no-repeat center bottom;
+                    }
+                }
+
+                &.festival {
+                    background: #4661FF;
+                    padding: 16px;
+
+                    .icons {
+                        background: url(../icons/festival.svg) no-repeat center bottom;
+                    }
+                }
+
+                &.creativity {
+                    background: #FF2C36;
+                    padding: 16px;
+
+                    .icons {
+                        background: url(../icons/creativity.svg) no-repeat center bottom;
+                    }
+                }
+
+                &.others {
+                    background: #DA9124;
+                    padding: 16px;
+
+                    .icons {
+                        background: url(../icons/others.svg) no-repeat center bottom;
+                    }
+                }
+
+                &:hover .fireworks {
+                    animation: rotation 2s infinite linear;
+                }
+
+                @keyframes rotation {
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                .icons {
+                    height: 126px;
+                }
+
+                .category-title {
+                    font-family: $aladin-font;
+                    font-size: 24px;
+                    color: $white;
+                    margin-top: 28px;
+                }
+
+                .fireworks {
+                    height: 30px;
+                    width: 30px;
+                    margin-top: 8px;
+                }
+            }
+        }
     }
 }
 
 // MAIN CONTENT CONTAINER END
+
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    body {
+        margin: 10px;
+
+        .content-container {
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 16px;
+        }
+
+        .main-cont-container{
+            margin-top: 32px;
+            .title{
+                font-size: 28px !important;
+                margin-bottom: 16px !important;
+            }
+            .cards-container{
+                .main-cards{
+                    width: 100% !important;
+                    padding-top: 30px !important;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
