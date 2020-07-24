@@ -1,0 +1,23 @@
+$base-font : 'Roboto', sans-serif;
+$base-font-size : 18px;
+$base-bgclr : #162246;
+$base-fontclr : #969EB5;
+$white : #fff;
+
+
+
+$container-bgclr : #1A2B5F;
+$container-bdrclr : #070D1F;
+
+$animation-time: 0.3s;
+
+
+
+// TRANSITION START 
+@mixin transition($what: all, $length: $animation-time, $easing: ease-in-out) {
+    -moz-transition: $what $length $easing;
+    -o-transition: $what $length $easing;
+    -webkit-transition: $what $length $easing;
+    -ms-transition: $what $length $easing;
+    transition: $what $length $easing;
+}

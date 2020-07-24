@@ -1,0 +1,65 @@
+// sass --watch scss/sanju-creative.scss:css/sanju-creative.css
+// ROBOTO :  Light 300,Regular 400,Medium 500,Bold 700,Black 900
+// ALADIN :  Regular 400
+// font-family: 'Aladin', cursive;
+// font-family: 'Roboto', sans-serif;
+
+@import 'reset';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $base-font;
+    font-size: $base-font-size;
+    background: $base-bgclr;
+    margin: 50px;
+    color: $base-fontclr;
+}
+
+// MAIN NAV BAR STYLES START
+.navbar {
+    .navbar-nav {
+        .nav-item {
+            margin-right: 20px;
+            font-weight: 300;
+
+            a {
+                @include transition;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+// MAIN NAV BAR STYLES END
+
+// MAIN CONTENT CONTAINER START
+.content-container {
+    background-color: $container-bgclr;
+    border: solid 1px $container-bdrclr;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.75);
+    padding: 50px;
+
+    .main-cont-container{
+        font-family: 'Aladin', cursive;
+        font-size: 48px;
+        color: $white;
+        min-height: 65vh;
+    }
+}
+
+// MAIN CONTENT CONTAINER END
