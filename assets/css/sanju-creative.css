@@ -213,17 +213,15 @@ body {
   margin-bottom: 32px;
 }
 .content-container .main-cont-container .drawing-collections .drawing-details-container {
-  width: 23%;
-  display: inline-block;
+  width: 100%;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  margin-right: 20px;
   margin-bottom: 32px;
 }
 .content-container .main-cont-container .drawing-collections .drawing-details-container .img-box {
   width: 100%;
-  height: 200px;
+  height: 300px;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
   -moz-border-radius-topleft: 10px;
@@ -270,9 +268,6 @@ body {
     width: 100% !important;
     padding-top: 30px !important;
   }
-  body .drawing-collections .drawing-details-container {
-    width: 44% !important;
-  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   body {
@@ -294,9 +289,6 @@ body {
   body .main-cont-container .cards-container .main-cards {
     width: 100% !important;
     padding-top: 30px !important;
-  }
-  body .drawing-collections .drawing-details-container {
-    width: 30% !important;
   }
 }
 
