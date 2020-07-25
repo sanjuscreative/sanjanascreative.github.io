@@ -55,7 +55,6 @@ body {
     padding: 50px;
 
     .main-cont-container {
-        min-height: 65vh;
 
         .title {
             font-family: 'Aladin', cursive;
@@ -103,6 +102,7 @@ body {
 
         .cards-container {
             margin-top: 40px;
+            margin-bottom: 150px;
             text-align: center;
 
             .main-cards {
@@ -183,6 +183,59 @@ body {
                 }
             }
         }
+
+
+        .drawing-collections {
+            .drawing-title {
+                font-size: 32px;
+                font-family: $aladin-font;
+                color: $white;
+                border-bottom: solid 1px #E43D83;
+                padding-bottom: 16px;
+                margin-bottom: 32px;
+            }
+
+            .drawing-details-container {
+                width: 23%;
+                display: inline-block;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                margin-right: 20px;
+                margin-bottom: 32px;
+
+                .img-box {
+                    width: 100%;
+                    height: 200px;
+                    -webkit-border-top-left-radius: 10px;
+                    -webkit-border-top-right-radius: 10px;
+                    -moz-border-radius-topleft: 10px;
+                    -moz-border-radius-topright: 10px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                .location {
+                    font-size: 14px;
+                    font-family: $roboto-font;
+                    font-weight: 400;
+                    color: $white;
+                    padding: 16px 16px 8px 16px;
+                }
+
+                .posted-dt {
+                    font-size: 12px;
+                    font-family: $roboto-font;
+                    font-weight: 300;
+                    color: rgb(210, 210, 210);
+                    padding: 0px 16px 16px 16px;
+                }
+
+                &.gods {
+                    background: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
     }
 }
 
@@ -205,14 +258,16 @@ body {
             padding: 16px;
         }
 
-        .main-cont-container{
+        .main-cont-container {
             margin-top: 32px;
-            .title{
+
+            .title {
                 font-size: 28px !important;
                 margin-bottom: 16px !important;
             }
-            .cards-container{
-                .main-cards{
+
+            .cards-container {
+                .main-cards {
                     width: 100% !important;
                     padding-top: 30px !important;
                 }
