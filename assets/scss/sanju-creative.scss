@@ -331,8 +331,22 @@ body {
 
             .cards-container {
                 .main-cards {
-                    width: 100% !important;
+                    width: 48% !important;
                     padding-top: 30px !important;
+                    margin-bottom: 4px !important;
+
+                    .icons {
+                        display: block;
+                    }
+
+                    .category-title {
+                        font-size: 22px !important;
+                        margin-top: 16px !important;
+                    }
+
+                    &:nth-child(2) {
+                        margin-right: 0;
+                    }
                 }
             }
         }
