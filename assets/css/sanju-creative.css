@@ -284,8 +284,9 @@ body {
     margin-bottom: 16px !important;
   }
   body .main-cont-container .cards-container .main-cards {
-    width: 44% !important;
+    width: 48% !important;
     padding-top: 30px !important;
+    margin-bottom: 4px !important;
   }
   body .main-cont-container .cards-container .main-cards .icons {
     display: none;
