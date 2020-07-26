@@ -48,46 +48,48 @@
     <div class="main-cont-container">
       <div class="title text-center">Welcome to my crayons Board</div>
       <div class="para text-center">Sanjana.V studying in Bangalore</div>
-      <p class="explore-btn-sec text-center">
+      <!-- <p class="explore-btn-sec text-center">
         <a href="#" class="explore-btn text-center">Explore</a>
-      </p>
+      </p> -->
 
 
       <!-- CARDS CONTAINER START -->
       <div class="cards-container text-center">
         <!-- GODS START -->
-        <div class="main-cards gods">
-          <div class="icons text-center"></div>
-          <p class="category-title">Gods Drawings</p>
-          <img src="assets/icons/fireworks.svg" class="fireworks" alt="" title="">
-        </div>
+        <a href="#godcollection">
+          <div id="god" class="main-cards gods">
+            <div class="icons text-center"></div>
+            <p class="category-title">Gods Drawings</p>
+            <img src="assets/icons/fireworks.svg" class="fireworks" alt="" title="">
+          </div>
+        </a>
         <!-- GODS END -->
         <!-- FESTIVAL START -->
-        <div class="main-cards festival">
-          <div class="icons text-center">
-            <!-- <img src="assets/icons/festival.svg" class="img-fluid" alt="Festival" title="Festival"> -->
+        <a href="#festivalcollection">
+          <div id="festival" class="main-cards festival">
+            <div class="icons text-center"></div>
+            <p class="category-title">Festival</p>
+            <img src="assets/icons/fireworks.svg" class="fireworks" alt="" title="">
           </div>
-          <p class="category-title">Festival</p>
-          <img src="assets/icons/fireworks.svg" class="fireworks" alt="" title="">
-        </div>
+        </a>
         <!-- FESTIVAL END -->
         <!-- CREATIVITY START -->
-        <div class="main-cards creativity">
-          <div class="icons text-center">
-            <!-- <img src="assets/icons/creativity.svg" class="img-fluid" alt="Creativity" title="Creativity"> -->
+        <a href="#creativitycollection">
+          <div id="creativity" class="main-cards creativity">
+            <div class="icons text-center"></div>
+            <p class="category-title">Creativity</p>
+            <img src="assets/icons/fireworks.svg" class="fireworks" alt="" title="">
           </div>
-          <p class="category-title">Creativity</p>
-          <img src="assets/icons/fireworks.svg" class="fireworks" alt="" title="">
-        </div>
+        </a>
         <!-- CREATIVITY END -->
         <!-- OTHERS START -->
-        <div class="main-cards others">
-          <div class="icons text-center">
-            <!-- <img src="assets/icons/others.svg" class="img-fluid" alt="Others" title="Others"> -->
+        <a href="#othercollection">
+          <div id="others" class="main-cards others">
+            <div class="icons text-center"></div>
+            <p class="category-title">Others</p>
+            <img src="assets/icons/fireworks.svg" class="fireworks" alt="" title="">
           </div>
-          <p class="category-title">Others</p>
-          <img src="assets/icons/fireworks.svg" class="fireworks" alt="" title="">
-        </div>
+        </a>
         <!-- OTHERS END -->
       </div>
       <!-- CARDS CONTAINER END -->
@@ -97,7 +99,7 @@
       <div class="drawing-collections">
 
         <!-- GODS DRAWING START -->
-        <div class="godcollection-container">
+        <div id="godcollection" class="godcollection-container">
           <h1 class="drawing-title">Gods Drawings</h1>
 
           <div class="container-fluid">
@@ -213,34 +215,259 @@
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
         <!-- GODS DRAWING END -->
 
+        <!-- FESTIVAL DRAWING START -->
+        <div id="festivalcollection" class="festivalcollection-container">
+          <h1 class="drawing-title">Festival Drawings</h1>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/festival/festival01.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/festival/festival02.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 21, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/festival/festival03.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 16, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/festival/festival04.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 14, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/festival/festival05.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 01, 2020</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- FESTIVAL DRAWING END -->
+
+        <!-- CREATIVITY DRAWING START -->
+        <div id="creativitycollection" class="creativitycollection-container">
+          <h1 class="drawing-title">Creativity Drawings</h1>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative01.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative02.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative03.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative04.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative05.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative06.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative07.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative08.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative09.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative10.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/creativity/creative11.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- CREATIVITY DRAWING END -->
+
+        <!-- OTHERS DRAWING START -->
+        <div id="othercollection" class="othercollection-container">
+          <h1 class="drawing-title">Others</h1>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/others/others01.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/others/others02.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/others/others03.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/others/others04.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/others/others05.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/others/others06.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="drawing-details-container gods">
+                  <div class="img-box"
+                    style="background: url(assets/images/others/others07.jpg) no-repeat; background-size: cover;">
+                  </div>
+                  <p class="location">Bangalore, India</p>
+                  <p class="posted-dt">July 23, 2020</p>
+                </div>
+              </div>
 
 
-
-
-
+            </div>
+          </div>
+        </div>
+        <!-- OTHERS DRAWING END -->
 
       </div>
       <!-- DRAWING COLLECTIONS END -->
@@ -269,6 +496,7 @@
 
 
 
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -280,6 +508,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+  <script src="assets/js/common.js"></script>
 </body>
 
 </html>

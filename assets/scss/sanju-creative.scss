@@ -14,6 +14,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $roboto-font;
     font-size: $base-font-size;
@@ -102,7 +106,7 @@ body {
 
         .cards-container {
             margin-top: 40px;
-            margin-bottom: 150px;
+            margin-bottom: 50px;
             text-align: center;
 
             .main-cards {
@@ -122,6 +126,7 @@ body {
                 &.gods {
                     padding: 16px;
                     background: #E43D83;
+                    cursor: pointer;
 
                     .icons {
                         background: url(../icons/ganesha.svg) no-repeat center bottom;
@@ -131,6 +136,7 @@ body {
                 &.festival {
                     background: #4661FF;
                     padding: 16px;
+                    cursor: pointer;
 
                     .icons {
                         background: url(../icons/festival.svg) no-repeat center bottom;
@@ -140,6 +146,7 @@ body {
                 &.creativity {
                     background: #FF2C36;
                     padding: 16px;
+                    cursor: pointer;
 
                     .icons {
                         background: url(../icons/creativity.svg) no-repeat center bottom;
@@ -149,6 +156,7 @@ body {
                 &.others {
                     background: #DA9124;
                     padding: 16px;
+                    cursor: pointer;
 
                     .icons {
                         background: url(../icons/others.svg) no-repeat center bottom;
@@ -184,16 +192,29 @@ body {
             }
         }
 
-
         .drawing-collections {
             .drawing-title {
                 font-size: 32px;
                 font-family: $aladin-font;
                 color: $white;
-                border-bottom: solid 1px #E43D83;
                 padding-bottom: 16px;
                 margin-bottom: 32px;
+                border-bottom: solid 1px rgba(255, 255, 255, 0.2);
             }
+
+            .festivalcollection-container,
+            .creativitycollection-container,
+            .othercollection-container {
+                display: none;
+            }
+
+            .godcollection-container,
+            .festivalcollection-container,
+            .creativitycollection-container,
+            .othercollection-container {
+                padding-top: 50px;
+            }
+
 
             .drawing-details-container {
                 width: 100%;
@@ -266,8 +287,21 @@ body {
 
             .cards-container {
                 .main-cards {
-                    width: 100% !important;
+                    width: 44% !important;
                     padding-top: 30px !important;
+
+                    .icons {
+                        display: none;
+                    }
+
+                    .category-title {
+                        font-size: 22px !important;
+                        margin-top: 0 !important;
+                    }
+
+                    &:nth-child(2) {
+                        margin-right: 0;
+                    }
                 }
             }
         }
