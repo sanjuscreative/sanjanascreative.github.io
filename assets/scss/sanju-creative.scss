@@ -28,6 +28,15 @@ body {
 
 // MAIN NAV BAR STYLES START
 .navbar {
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            outline: none !important;
+            border: none !important;
+        }
+    }
+
     .navbar-nav {
         .nav-item {
             margin-right: 20px;
@@ -35,6 +44,7 @@ body {
 
             a {
                 @include transition;
+                padding: 15px 0;
 
                 &:hover {
                     color: $white;
@@ -59,6 +69,7 @@ body {
     padding: 50px;
 
     .main-cont-container {
+        padding-top: 120px;
 
         .title {
             font-family: 'Aladin', cursive;
@@ -258,7 +269,84 @@ body {
     }
 }
 
+#scrollTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    background-color: #2266b0;
+    display: none;
+    border-radius: 55px;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 8px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+
+    img {
+        width: 20px;
+        height: auto;
+    }
+}
+
 // MAIN CONTENT CONTAINER END
+
+// MODAL WINDOW START
+#about-sanjana {
+    .modal-content {
+        background-color: #1A2B5F;
+
+        .modal-header {
+            font-family: $aladin-font;
+            font-size: 24px;
+            color: $white;
+            position: relative;
+            border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+
+            .close {
+                width: 50px;
+                height: auto;
+                margin-top: 10px;
+                position: absolute;
+                right: 24px;
+                top: -3px;
+            }
+        }
+
+        .modal-body {
+            font-family: $roboto-font;
+            font-weight: 400;
+            font-size: 14px;
+            color: #333;
+            line-height: 18px;
+
+            .profile-pic {
+                background: url(../images/sanjana-profile-pic.jpg) no-repeat;
+                background-size: contain;
+                display: block;
+                height: 160px;
+                width: 160px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                margin: 0 auto;
+                margin: 10px auto 0 auto;
+                border: solid 2px #eee;
+                -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            }
+
+            .about-cont {
+                padding: 30px;
+                color: $base-fontclr;
+            }
+        }
+    }
+}
+
+// MODAL WINDOW END
 
 
 
@@ -270,6 +358,10 @@ body {
     body {
         margin: 10px;
 
+        .navbar-nav {
+            margin-top: 40px !important;
+        }
+
         .content-container {
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
@@ -279,6 +371,7 @@ body {
 
         .main-cont-container {
             margin-top: 32px;
+            padding-top: 60px !important;
 
             .title {
                 font-size: 28px !important;
@@ -314,6 +407,10 @@ body {
     body {
         margin: 10px;
 
+        .navbar-nav {
+            margin-top: 40px !important;
+        }
+
         .content-container {
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
@@ -323,6 +420,7 @@ body {
 
         .main-cont-container {
             margin-top: 32px;
+            padding-top: 60px !important;
 
             .title {
                 font-size: 28px !important;

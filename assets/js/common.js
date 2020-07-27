@@ -15,4 +15,21 @@ $(document).ready(function () {
         $(".othercollection-container").show();
         $(".godcollection-container, .festivalcollection-container, .creativitycollection-container").hide();
     });
+
+
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $("#scrollTop").show("1000");
+        } else {
+          $("#scrollTop").hide("1000");
+        }
+        return false;
+      });
+      
+      $("#scrollTop").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
 });
